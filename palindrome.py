@@ -1,13 +1,13 @@
 import sys
 
-
 if len(sys.argv) == 2:
-    text = sys.argv[1]  
-    print("User provided input:")
+    text = sys.argv[1]
+    print("User provided input value:")
 else:
-    print("No command-line input provided. Using manual input:")
-    text = input("Enter a string: ")  
+    print("No input given - using default value:")
+    text = "323"
+
 if text == text[::-1]:
-    print("It is a palindrome.")
+    print(f"'{text}' is a palindrome")
 else:
-    print("It is not a palindrome.")
+    print(f"'{text}' is not a palindrome")
